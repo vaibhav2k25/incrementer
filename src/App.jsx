@@ -7,7 +7,8 @@ import familydata from './api/family.json'
 import FamilyInfo from './components/FamilyInfo'
 import { EventHandling } from './components/EventHandling'
 import { EventProps } from './components/EventProps'
-import { Incrementer } from './components/hooks/Incrementer'
+import { Incrementer, SiblingComp } from './components/hooks/Incrementer'
+import { ToggleSwitch } from './components/projects/ToggleSwitch/ToggleSwitch'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -53,7 +54,8 @@ function App() {
       <FamilyProfile {...familyData}></FamilyProfile> */}
       {/* <EventHandling></EventHandling> */}
       {/* <EventProps></EventProps> */}
-      <Incrementer></Incrementer>
+      {/* <Incrementer></Incrementer> */}
+      <ToggleSwitch/>
     </>
   )
 }
